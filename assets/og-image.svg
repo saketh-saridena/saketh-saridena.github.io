@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="t d">
   <title id="t">Saketh Saridena</title>
-  <desc id="d">Saketh Saridena, data scientist and AI engineer, on a navy card with a rising data line. Source design for og-image.png.</desc>
+  <desc id="d">Saketh Saridena, AI engineer and data scientist, on a navy card with a rising data line. Source design for og-image.png.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0b1b33"/>
@@ -32,8 +32,8 @@
 
   <text class="name" x="76" y="214">Saketh</text>
   <text class="name" x="76" y="338">Saridena</text>
-  <text class="role" x="80" y="414">Data scientist and AI engineer</text>
-  <text class="sub" x="80" y="460">LLM platforms, ML pipelines, GenAI systems</text>
+  <text class="role" x="80" y="414">AI engineer and data scientist</text>
+  <text class="sub" x="80" y="460">Multi-agent systems on Azure Databricks</text>
   <text class="url" x="80" y="526">sakethsaridena.com</text>
 
   <rect x="796" y="76" width="328" height="410" rx="26" fill="#16367a"/>

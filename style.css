@@ -905,7 +905,8 @@ html:not(.js) .menu-toggle {
   margin: 0;
 }
 
-.study figure img {
+.study figure img,
+.study figure svg {
   width: 100%;
   height: auto;
   border-radius: var(--radius-sm);
@@ -979,7 +980,7 @@ html:not(.js) .menu-toggle {
 /* ---------- Research ---------- */
 .papers {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(16px, 2.4vw, 24px);
   margin: 0;
   padding: 0;
