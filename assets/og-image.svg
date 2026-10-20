@@ -37,6 +37,6 @@
   <text class="url" x="80" y="526">sakethsaridena.com</text>
 
   <rect x="796" y="76" width="328" height="410" rx="26" fill="#16367a"/>
-  <image x="796" y="76" width="328" height="410" preserveAspectRatio="xMidYMid slice" href="img/saketh-720.jpg" xlink:href="img/saketh-720.jpg" clip-path="url(#photo)"/>
+  <image x="796" y="76" width="328" height="410" preserveAspectRatio="xMidYMid slice" href="img/headshot-546.jpg" xlink:href="img/headshot-546.jpg" clip-path="url(#photo)"/>
   <rect x="796" y="76" width="328" height="410" rx="26" fill="none" stroke="#7cc4ff" stroke-opacity=".3" stroke-width="2"/>
 </svg>
