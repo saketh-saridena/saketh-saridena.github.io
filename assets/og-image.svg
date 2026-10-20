@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="t d">
+  <title id="t">Saketh Saridena</title>
+  <desc id="d">Saketh Saridena, data scientist and AI engineer, on a navy card with a rising data line. Source design for og-image.png.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1b33"/>
+      <stop offset="1" stop-color="#16367a"/>
+    </linearGradient>
+    <clipPath id="photo">
+      <rect x="796" y="76" width="328" height="410" rx="26"/>
+    </clipPath>
+    <style>
+      @font-face {
+        font-family: "Instrument Sans";
+        font-weight: 400 700;
+        font-stretch: 75% 100%;
+        src: url("fonts/instrument-sans.woff2") format("woff2");
+      }
+      text { font-family: "Instrument Sans", "Segoe UI", Arial, sans-serif; }
+      .name { fill: #ffffff; font-size: 136px; font-weight: 700; font-stretch: 75%; letter-spacing: -1px; }
+      .role { fill: #ffffff; font-size: 40px; font-weight: 600; }
+      .sub { fill: #c7d6ee; font-size: 30px; font-weight: 400; }
+      .url { fill: #7cc4ff; font-size: 30px; font-weight: 600; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- rising data line with its fitted trend -->
+  <path d="M0 610 L1200 470" fill="none" stroke="#7cc4ff" stroke-opacity=".18" stroke-width="2" stroke-linecap="round"/>
+  <path d="M0 612 L40 602 L80 608 L120 592 L160 598 L200 584 L240 590 L280 574 L320 582 L360 566 L400 574 L440 558 L480 566 L520 550 L560 557 L600 544 L640 552 L680 536 L720 545 L760 529 L800 536 L840 522 L880 530 L920 514 L960 521 L1000 506 L1040 514 L1080 498 L1120 506 L1160 490 L1200 498" fill="none" stroke="#7cc4ff" stroke-opacity=".6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text class="name" x="76" y="214">Saketh</text>
+  <text class="name" x="76" y="338">Saridena</text>
+  <text class="role" x="80" y="414">Data scientist and AI engineer</text>
+  <text class="sub" x="80" y="460">LLM platforms, ML pipelines, GenAI systems</text>
+  <text class="url" x="80" y="526">sakethsaridena.com</text>
+
+  <rect x="796" y="76" width="328" height="410" rx="26" fill="#16367a"/>
+  <image x="796" y="76" width="328" height="410" preserveAspectRatio="xMidYMid slice" href="img/saketh-720.jpg" xlink:href="img/saketh-720.jpg" clip-path="url(#photo)"/>
+  <rect x="796" y="76" width="328" height="410" rx="26" fill="none" stroke="#7cc4ff" stroke-opacity=".3" stroke-width="2"/>
+</svg>
