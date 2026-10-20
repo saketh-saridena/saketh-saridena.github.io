@@ -1,4 +1,4 @@
-// Saketh Saridena, portfolio behavior: theme, menu, active section, case studies.
+// Saketh Saridena, portfolio behavior: theme, menu, header border and the current-section marker.
 
 (function () {
   "use strict";
@@ -16,6 +16,14 @@
 
   function currentTheme() {
     return root.getAttribute("data-theme") || (darkQuery.matches ? "dark" : "light");
+  }
+
+  // Keep the browser's UI color in step with the page, including a manual choice.
+  function syncThemeColor() {
+    var bg = getComputedStyle(document.body).backgroundColor;
+    document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) {
+      m.setAttribute("content", bg);
+    });
   }
 
   // ----- Theme toggle -----
@@ -36,13 +44,18 @@
         /* storage blocked: the choice lasts for this page view */
       }
       labelToggle();
+      syncThemeColor();
     });
     darkQuery.addEventListener("change", function () {
-      if (!storedTheme()) labelToggle();
+      if (!storedTheme()) {
+        labelToggle();
+        syncThemeColor();
+      }
     });
   }
+  if (storedTheme()) syncThemeColor();
 
-  // ----- Mobile menu -----
+  // ----- Phone menu: the toggle comes before the links, so Tab moves into them -----
   var menuButton = document.querySelector(".menu-toggle");
   var navLinks = document.getElementById("nav-links");
   function setMenu(open) {
@@ -65,66 +78,45 @@
     });
   }
 
-  // ----- Header border once the page scrolls -----
+  // ----- Header border once the page scrolls, and the nav link for the section in view -----
   var header = document.querySelector(".site-header");
-  if (header) {
-    var onScroll = function () {
-      header.classList.toggle("is-scrolled", window.scrollY > 8);
-    };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
-  }
-
-  // ----- Mark the nav link for the section in view -----
-  if ("IntersectionObserver" in window && navLinks) {
-    var links = {};
-    navLinks.querySelectorAll('a[href^="#"]').forEach(function (a) {
-      links[a.getAttribute("href").slice(1)] = a;
-    });
-    var observer = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          var link = links[entry.target.id];
-          if (!link || !entry.isIntersecting) return;
-          Object.keys(links).forEach(function (id) {
-            links[id].removeAttribute("aria-current");
-          });
-          link.setAttribute("aria-current", "true");
-        });
-      },
-      { rootMargin: "-45% 0px -50% 0px" }
-    );
-    Object.keys(links).forEach(function (id) {
-      var section = document.getElementById(id);
-      if (section) observer.observe(section);
+  var sections = [];
+  if (navLinks) {
+    navLinks.querySelectorAll("a").forEach(function (a) {
+      if (a.pathname !== location.pathname || !a.hash) return;
+      var section = document.getElementById(a.hash.slice(1));
+      if (section) sections.push({ link: a, section: section });
     });
   }
 
-  // ----- Case study dialogs -----
-  document.querySelectorAll("[data-case]").forEach(function (button) {
-    var dialog = document.getElementById(button.getAttribute("data-case"));
-    if (!dialog || typeof dialog.showModal !== "function") {
-      button.hidden = true;
-      return;
-    }
-    button.addEventListener("click", function () {
-      dialog.showModal();
-      dialog.scrollTop = 0;
+  var ticking = false;
+  function update() {
+    ticking = false;
+    if (header) header.classList.toggle("is-scrolled", window.scrollY > 8);
+    if (!sections.length) return;
+    // The current section is the last one whose top has passed 40% of the viewport height.
+    var line = window.innerHeight * 0.4;
+    var current = null;
+    sections.forEach(function (s) {
+      if (s.section.getBoundingClientRect().top <= line) current = s;
     });
-  });
-
-  document.querySelectorAll("dialog.case").forEach(function (dialog) {
-    dialog.addEventListener("click", function (e) {
-      // A click on the backdrop lands on the dialog element itself
-      if (e.target === dialog) dialog.close();
+    sections.forEach(function (s) {
+      if (s === current) s.link.setAttribute("aria-current", "location");
+      else s.link.removeAttribute("aria-current");
     });
-    var close = dialog.querySelector(".case-close");
-    if (close) {
-      close.addEventListener("click", function () {
-        dialog.close();
-      });
-    }
-  });
+  }
+  window.addEventListener(
+    "scroll",
+    function () {
+      if (!ticking) {
+        ticking = true;
+        window.requestAnimationFrame(update);
+      }
+    },
+    { passive: true }
+  );
+  window.addEventListener("resize", update);
+  update();
 
   var year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());

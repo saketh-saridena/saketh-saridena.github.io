@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Predictive maintenance for aluminum recycling | Saketh Saridena</title>
+  <meta name="description" content="A Random Forest that flags bad decoating cycles in aluminum scrap recycling from furnace sensor data: 469 of 498 bad cycles caught, 0.988 AUC.">
+  <meta name="author" content="Saketh Saridena">
+  <link rel="canonical" href="https://sakethsaridena.com/work/aluminum-predictive-maintenance/">
+  <meta name="theme-color" content="#f4f7fc" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#081426" media="(prefers-color-scheme: dark)">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Saketh Saridena">
+  <meta property="og:title" content="Predictive maintenance for aluminum recycling | Saketh Saridena">
+  <meta property="og:description" content="A Random Forest that flags bad decoating cycles in aluminum scrap recycling from furnace sensor data: 469 of 498 bad cycles caught, 0.988 AUC.">
+  <meta property="og:url" content="https://sakethsaridena.com/work/aluminum-predictive-maintenance/">
+  <meta property="og:image" content="https://sakethsaridena.com/assets/og-image.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Saketh Saridena, data scientist and AI engineer, on a navy card with a rising data line.">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Predictive maintenance for aluminum recycling | Saketh Saridena">
+  <meta name="twitter:description" content="A Random Forest that flags bad decoating cycles in aluminum scrap recycling from furnace sensor data: 469 of 498 bad cycles caught, 0.988 AUC.">
+  <meta name="twitter:image" content="https://sakethsaridena.com/assets/og-image.png">
+  <meta name="twitter:image:alt" content="Saketh Saridena, data scientist and AI engineer, on a navy card with a rising data line.">
+
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preload" href="/assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/style.css">
+  <script>
+    // Mark JavaScript as available and apply a saved theme before first paint.
+    document.documentElement.classList.add("js");
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
+  <script src="/script.js" defer></script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Saketh Saridena", "item": "https://sakethsaridena.com/"}, {"@type": "ListItem", "position": 2, "name": "Predictive maintenance for aluminum recycling", "item": "https://sakethsaridena.com/work/aluminum-predictive-maintenance/"}]}</script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="brand-navy" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#0b1b33"/>
+        <stop offset="1" stop-color="#16367a"/>
+      </linearGradient>
+    </defs>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 15 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M16 13H8M16 17H8M10 9H8"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="m7 15 4-4 3 3 6-6"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/><path d="M12 15v2"/></symbol>
+    <symbol id="i-question" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.4a2.5 2.5 0 1 1 3.4 2.4c-.6.3-1 .8-1 1.5v.4"/><path d="M12 17h.01"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.4l2.8 2.8L16.2 9.8"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Primary">
+      <a class="brand" href="/" aria-label="Saketh Saridena, home">
+        <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <rect width="32" height="32" rx="8" fill="url(#brand-navy)"/>
+          <g fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" transform="translate(3.2 3.6) scale(.8)">
+            <path d="M13 10s-1.5-3-4.5-3S4 8.5 4 11s2.5 3.5 5 4.5 5 2 5 4.5-2 4.5-5.5 4.5-5-3-5-3"/>
+            <path d="M28.5 10S27 7 24 7s-4.5 1.5-4.5 4 2.5 3.5 5 4.5 5 2 5 4.5-2 4.5-5.5 4.5-5-3-5-3"/>
+          </g>
+        </svg>
+        <span class="brand-name">Saketh Saridena</span>
+      </a>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch theme">
+          <svg class="icon i-moon" aria-hidden="true" focusable="false"><use href="#i-moon"/></svg>
+          <svg class="icon i-sun" aria-hidden="true" focusable="false"><use href="#i-sun"/></svg>
+        </button>
+        <a class="btn btn-primary btn-resume" href="/assets/Saketh_Saridena_Resume.pdf" aria-label="Resume (PDF)">
+          <svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-download"/></svg>
+          <span>Resume</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Open menu">
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/#experience">Experience</a></li>
+        <li><a href="/#work">Work</a></li>
+        <li><a href="/#research">Research</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="case wrap">
+    <a class="crumb" href="/#work"><svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-arrow-left"/></svg><span>All work</span></a>
+
+    <article aria-labelledby="case-title">
+      <header class="banner on-navy case-hero">
+        <p class="kicker">Case study</p>
+        <h1 id="case-title">Predictive maintenance for aluminum recycling</h1>
+        <p class="lede">Recycling aluminum scrap starts with decoating, which burns paint, plastics and other coatings off the scrap. A bad cycle leaves extra black dross that is costly to dispose of and wastes metal. This classifier flags bad cycles from sensor readings so maintenance can step in early.</p>
+        <dl class="case-meta">
+            <div><dt>Context</dt><dd>CU Boulder DaSSA Hackathon</dd></div>
+            <div><dt>Year</dt><dd>2023</dd></div>
+            <div><dt>Built with</dt><dd>Python, scikit-learn, XGBoost, imbalanced-learn, pandas</dd></div>
+        </dl>
+          <div class="links">
+            <a class="text-link" href="https://github.com/saketh-saridena/aluminum-predictive-maintenance"><svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-github"/></svg><span>Code on GitHub</span></a>
+          </div>
+      </header>
+
+      <dl class="metrics">
+        <div><dt>Recall on bad cycles</dt><dd>94.2%</dd></div>
+        <div><dt>Precision on bad cycles</dt><dd>75.4%</dd></div>
+        <div><dt>AUC-ROC</dt><dd>0.988</dd></div>
+        <div><dt>Accuracy</dt><dd>94.38%</dd></div>
+      </dl>
+      <div class="case-body">
+        <h2>The problem</h2>
+        <p>Bad cycles are rare, and a missed one costs far more than a false alarm: the hackathon's problem statement put an undetected bad cycle at $32,560 in losses. So the model is judged on how many bad cycles it catches, not on overall accuracy.</p>
+
+        <h2>Data</h2>
+        <ul>
+          <li>16,504 training cycles, recorded at 5-minute intervals from March to May 2020.</li>
+          <li>Each row holds furnace sensor readings and operating settings (22 columns).</li>
+          <li>About 15% of cycles are bad, so a model that always predicts "good" would already score about 85% accuracy.</li>
+        </ul>
+
+        <h2>Approach</h2>
+        <ol>
+          <li>Imputed missing values: the mean for continuous columns, the mode for categorical ones.</li>
+          <li>Rebalanced the training data by oversampling bad cycles with SMOTE.</li>
+          <li>Compared Logistic Regression, Random Forest and XGBoost.</li>
+          <li>Tuned with GridSearchCV and 3-fold cross-validation over 243 hyperparameter combinations, optimizing recall on bad cycles.</li>
+          <li>Picked a Random Forest with the tuned settings.</li>
+        </ol>
+        <p>Correlation analysis pointed to the strongest single sensors: B_15 (0.655), B_16 (0.631) and B_19 (0.613).</p>
+
+        <h2>Results</h2>
+        <figure class="chart square">
+          <img src="/assets/charts/aluminum-confusion-matrix.svg" width="415" height="379" loading="lazy" alt="Confusion matrix for the Random Forest on 3,239 held-out cycles: 2,588 good cycles predicted good, 153 good cycles flagged as bad, 29 bad cycles missed and 469 bad cycles caught.">
+          <figcaption>Random Forest on 3,239 held-out cycles.</figcaption>
+        </figure>
+        <ul>
+          <li>Caught 469 of 498 bad cycles (94.2% recall) and missed 29.</li>
+          <li>Raised 153 false alarms on good cycles, for 75.4% precision and an F1 score of 0.84.</li>
+          <li>0.988 AUC-ROC and 94.38% overall accuracy, against the roughly 85% that always predicting "good" would score.</li>
+        </ul>
+      </div>
+    </article>
+
+    <nav class="next" aria-label="More work">
+      <a href="/#work"><span>Back to</span><strong>All work</strong></a>
+      <a href="/work/misinformation-nlp-analysis/"><span>Next</span><strong>Social media misinformation, an NLP study</strong></a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p>&copy; <span id="year">2026</span> Saketh Saridena</p>
+      <p><a href="https://github.com/saketh-saridena/saketh-saridena.github.io">Source on GitHub</a></p>
+    </div>
+  </footer>
+</body>
+</html>

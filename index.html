@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Saketh Saridena | Data Scientist &amp; AI Engineer</title>
-  <meta name="description" content="Saketh Saridena is a data scientist and AI engineer in Seattle who builds LLM-powered platforms, production ML pipelines and GenAI systems. M.S. in Data Science, CU Boulder.">
+  <meta name="description" content="Saketh Saridena, data scientist and AI engineer in Seattle. Built an AI-powered EDA platform at Applexus Technologies and evaluated LLMs for Honda Research Institute.">
   <meta name="author" content="Saketh Saridena">
   <link rel="canonical" href="https://sakethsaridena.com/">
   <meta name="theme-color" content="#f4f7fc" media="(prefers-color-scheme: light)">
@@ -13,7 +13,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Saketh Saridena">
   <meta property="og:title" content="Saketh Saridena | Data Scientist &amp; AI Engineer">
-  <meta property="og:description" content="Data scientist and AI engineer in Seattle. LLM-powered platforms, production ML pipelines and GenAI systems.">
+  <meta property="og:description" content="Saketh Saridena, data scientist and AI engineer in Seattle. Built an AI-powered EDA platform at Applexus Technologies and evaluated LLMs for Honda Research Institute.">
   <meta property="og:url" content="https://sakethsaridena.com/">
   <meta property="og:image" content="https://sakethsaridena.com/assets/og-image.png">
   <meta property="og:image:type" content="image/png">
@@ -23,7 +23,7 @@
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Saketh Saridena | Data Scientist &amp; AI Engineer">
-  <meta name="twitter:description" content="Data scientist and AI engineer in Seattle. LLM-powered platforms, production ML pipelines and GenAI systems.">
+  <meta name="twitter:description" content="Saketh Saridena, data scientist and AI engineer in Seattle. Built an AI-powered EDA platform at Applexus Technologies and evaluated LLMs for Honda Research Institute.">
   <meta name="twitter:image" content="https://sakethsaridena.com/assets/og-image.png">
   <meta name="twitter:image:alt" content="Saketh Saridena, data scientist and AI engineer, on a navy card with a rising data line.">
 
@@ -35,41 +35,62 @@
   <link rel="preload" href="/assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/style.css">
   <script>
-    // Apply a saved theme before first paint so the page does not flash.
+    // Mark JavaScript as available and apply a saved theme before first paint.
+    document.documentElement.classList.add("js");
     try {
       var t = localStorage.getItem("theme");
       if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
     } catch (e) {}
   </script>
   <script src="/script.js" defer></script>
-
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Saketh Saridena",
-    "url": "https://sakethsaridena.com/",
-    "image": "https://sakethsaridena.com/assets/img/headshot-546.jpg",
-    "jobTitle": "Data Scientist & AI Engineer",
-    "worksFor": { "@type": "Organization", "name": "Applexus Technologies" },
-    "address": { "@type": "PostalAddress", "addressLocality": "Seattle", "addressRegion": "WA", "addressCountry": "US" },
-    "alumniOf": [
-      { "@type": "CollegeOrUniversity", "name": "University of Colorado Boulder" },
-      { "@type": "CollegeOrUniversity", "name": "Vellore Institute of Technology" }
-    ],
-    "knowsAbout": ["Machine Learning", "Large Language Models", "Generative AI", "Deep Learning", "NLP", "MLOps", "Data Science"],
-    "sameAs": [
-      "https://www.linkedin.com/in/saketh-saridena/",
-      "https://github.com/saketh-saridena"
-    ]
-  }
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Saketh Saridena",
+  "url": "https://sakethsaridena.com/",
+  "image": "https://sakethsaridena.com/assets/img/headshot-546.jpg",
+  "jobTitle": "Data Scientist & AI Engineer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Applexus Technologies"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Seattle",
+    "addressRegion": "WA",
+    "addressCountry": "US"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Colorado Boulder"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Vellore Institute of Technology"
+    }
+  ],
+  "knowsAbout": [
+    "Machine Learning",
+    "Large Language Models",
+    "LLM Evaluation",
+    "Generative AI",
+    "Exploratory Data Analysis",
+    "NLP",
+    "MLOps"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/saketh-saridena/",
+    "https://github.com/saketh-saridena"
+  ]
+}
   </script>
 </head>
 <body>
-  <!-- Icon sprite and shared gradients. Kept in the layout (not display:none) so the gradients render. -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
     <defs>
-      <linearGradient id="fig-navy" x1="0" y1="0" x2="1" y2="1">
+      <linearGradient id="brand-navy" x1="0" y1="0" x2="1" y2="1">
         <stop offset="0" stop-color="#0b1b33"/>
         <stop offset="1" stop-color="#16367a"/>
       </linearGradient>
@@ -81,13 +102,17 @@
     <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
     <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
     <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
-    <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
     <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 15 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
     <symbol id="i-doc" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M16 13H8M16 17H8M10 9H8"/></symbol>
     <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="m7 15 4-4 3 3 6-6"/></symbol>
     <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></symbol>
     <symbol id="i-mic" viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></symbol>
     <symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/><path d="M12 15v2"/></symbol>
+    <symbol id="i-question" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.4a2.5 2.5 0 1 1 3.4 2.4c-.6.3-1 .8-1 1.5v.4"/><path d="M12 17h.01"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.4l2.8 2.8L16.2 9.8"/></symbol>
   </svg>
 
   <a class="skip-link" href="#main">Skip to content</a>
@@ -96,7 +121,7 @@
     <nav class="nav wrap" aria-label="Primary">
       <a class="brand" href="#top" aria-label="Saketh Saridena, back to top">
         <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
-          <rect width="32" height="32" rx="8" fill="url(#fig-navy)"/>
+          <rect width="32" height="32" rx="8" fill="url(#brand-navy)"/>
           <g fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" transform="translate(3.2 3.6) scale(.8)">
             <path d="M13 10s-1.5-3-4.5-3S4 8.5 4 11s2.5 3.5 5 4.5 5 2 5 4.5-2 4.5-5.5 4.5-5-3-5-3"/>
             <path d="M28.5 10S27 7 24 7s-4.5 1.5-4.5 4 2.5 3.5 5 4.5 5 2 5 4.5-2 4.5-5.5 4.5-5-3-5-3"/>
@@ -104,14 +129,6 @@
         </svg>
         <span class="brand-name">Saketh Saridena</span>
       </a>
-
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
 
       <div class="nav-actions">
         <button class="theme-toggle" type="button" aria-label="Switch theme">
@@ -126,6 +143,14 @@
           <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg>
         </button>
       </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/#experience">Experience</a></li>
+        <li><a href="/#work">Work</a></li>
+        <li><a href="/#research">Research</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
@@ -139,296 +164,31 @@
           <path class="signal-trace" pathLength="1" d="M0 90 L40 82 L80 88 L120 74 L160 80 L200 68 L240 74 L280 60 L320 67 L360 55 L400 62 L440 50 L480 58 L520 46 L560 52 L600 42 L640 50 L680 38 L720 46 L760 34 L800 40 L840 30 L880 38 L920 26 L960 32 L1000 22 L1040 30 L1080 18 L1120 25 L1160 12 L1200 20"/>
         </svg>
         <div class="hero-grid">
-          <div>
-            <h1 class="hero-name" id="hero-name"><span>Saketh</span> <span>Saridena</span></h1>
-            <p class="hero-role">Data scientist and AI engineer in Seattle, WA</p>
-            <p class="hero-intro">I build LLM-powered platforms, production ML pipelines and GenAI systems. Data Science Consultant at Applexus Technologies, with an M.S. in Data Science from CU Boulder (4.0 GPA).</p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="/assets/Saketh_Saridena_Resume.pdf">
-                <svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-download"/></svg>
-                Download resume
-              </a>
-              <a class="btn btn-ghost" href="mailto:sakethsaridena6@gmail.com">
-                <svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg>
-                Email me
-              </a>
-              <div class="icon-links">
-                <a class="icon-link" href="https://www.linkedin.com/in/saketh-saridena/" aria-label="LinkedIn">
-                  <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-linkedin"/></svg>
-                </a>
-                <a class="icon-link" href="https://github.com/saketh-saridena" aria-label="GitHub">
-                  <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-github"/></svg>
-                </a>
-              </div>
+          <h1 class="hero-name" id="hero-name"><span>Saketh</span> <span>Saridena</span></h1>
+          <p class="hero-role">Data scientist and AI engineer in Seattle, WA</p>
+          <p class="hero-intro">I build LLM platforms, production ML pipelines and GenAI systems. At <strong>Applexus Technologies</strong> I built an AI-powered platform for exploratory data analysis, and in my CU Boulder capstone I evaluated LLMs for <strong>Honda Research Institute</strong>.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#work">
+              <svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-arrow-down"/></svg>
+              See selected work
+            </a>
+            <a class="btn btn-ghost" href="/assets/Saketh_Saridena_Resume.pdf">
+              <svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-download"/></svg>
+              Resume (PDF)
+            </a>
+            <div class="icon-links">
+              <a class="icon-link" href="mailto:sakethsaridena6@gmail.com" aria-label="Email"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-mail"/></svg></a>
+              <a class="icon-link" href="https://www.linkedin.com/in/saketh-saridena/" aria-label="LinkedIn"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-linkedin"/></svg></a>
+              <a class="icon-link" href="https://github.com/saketh-saridena" aria-label="GitHub"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-github"/></svg></a>
             </div>
           </div>
           <figure class="portrait">
             <picture>
-              <source type="image/webp" srcset="/assets/img/headshot-400.webp 400w, /assets/img/headshot-546.webp 546w" sizes="(max-width: 760px) 220px, 340px">
-              <img src="/assets/img/headshot-546.jpg" srcset="/assets/img/headshot-400.jpg 400w, /assets/img/headshot-546.jpg 546w" sizes="(max-width: 760px) 220px, 340px" width="546" height="683" alt="Saketh Saridena, smiling, in a navy blazer and light blue shirt." fetchpriority="high">
+              <source type="image/webp" srcset="/assets/img/headshot-400.webp 400w, /assets/img/headshot-546.webp 546w" sizes="(max-width: 680px) 84px, 280px">
+              <img src="/assets/img/headshot-546.jpg" srcset="/assets/img/headshot-400.jpg 400w, /assets/img/headshot-546.jpg 546w" sizes="(max-width: 680px) 84px, 280px" width="546" height="683" alt="Saketh Saridena, smiling, in a navy blazer and light blue shirt." fetchpriority="high">
             </picture>
           </figure>
         </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section class="section wrap" id="about" aria-labelledby="about-title">
-      <div class="section-head">
-        <h2 id="about-title">About</h2>
-      </div>
-      <div class="about">
-        <div class="prose">
-          <p>I'm a Data Science Consultant at Applexus Technologies, where I architected an AI-powered EDA platform that cut client analysis time by 95% and tripled our team's project capacity. I also assess AI and ML feasibility for enterprise use cases and build spend analytics and demand forecasting on Azure Databricks and SAP Analytics Cloud.</p>
-          <p>I hold an M.S. in Data Science from CU Boulder with a 4.0 GPA. My toolkit spans the AI stack, from fine-tuning GPT-4, LLaMA and Mistral to deploying production pipelines on Azure Databricks and AWS. I've evaluated LLMs for Honda Research Institute, engineered RAG architectures with LangChain, and shipped deep learning models that serve real users.</p>
-          <p>Along the way I've published an IEEE paper, authored an Indian patent and presented research at PVSEC-31. I think in business outcomes, not only accuracy scores: every model should come with a clear reason to exist, and I like closing the gap between research and products that ship.</p>
-        </div>
-        <dl class="facts">
-          <div><dt>Now</dt><dd>Data Science Consultant, Applexus Technologies</dd></div>
-          <div><dt>Based in</dt><dd>Seattle, WA</dd></div>
-          <div><dt>Education</dt><dd>M.S. Data Science, CU Boulder, 4.0 GPA</dd></div>
-          <div><dt>Focus</dt><dd>LLM and GenAI systems, ML pipelines on Azure and AWS, MLOps</dd></div>
-          <div><dt>Research</dt><dd>Indian patent, IEEE paper, PVSEC-31 talk</dd></div>
-        </dl>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section class="section wrap" id="projects" aria-labelledby="projects-title">
-      <div class="section-head">
-        <h2 id="projects-title">Projects</h2>
-        <p>An open-source tool for coding agents, and data science work from forecasting to NLP. Each project links to its code.</p>
-      </div>
-
-      <article class="banner on-navy feature" aria-labelledby="va-title">
-        <div>
-          <p class="feature-kicker">Open-source plugin, MIT license</p>
-          <h3 id="va-title">voice-alerts</h3>
-          <p class="feature-lede">A friendly voice that tells you when your coding agent needs you, and what it needs. It names the session and speaks up for permission requests, questions, plans ready for review and long jobs that finish, using offline system voices or optional neural voices.</p>
-          <ul class="agents" aria-label="Supported coding agents">
-            <li>Claude Code</li>
-            <li>Codex CLI</li>
-            <li>Gemini CLI</li>
-            <li>GitHub Copilot CLI</li>
-            <li>Cursor</li>
-            <li>OpenCode</li>
-            <li>Aider</li>
-          </ul>
-          <a class="btn btn-primary" href="https://github.com/saketh-saridena/voice-alerts">
-            <svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-github"/></svg>
-            View voice-alerts on GitHub
-          </a>
-        </div>
-        <figure class="feature-figure">
-          <svg viewBox="0 0 440 260" role="img" aria-labelledby="va-fig">
-            <title id="va-fig">A speaker with sound waves next to a talking voice level meter.</title>
-            <circle cx="110" cy="130" r="84" fill="#ffffff" fill-opacity=".07"/>
-            <path d="M68 108h24l34-29v102l-34-29H68z" fill="#ffffff"/>
-            <path d="M144 106a34 34 0 0 1 0 48" fill="none" stroke="#7cc4ff" stroke-width="9" stroke-linecap="round"/>
-            <path d="M162 86a62 62 0 0 1 0 88" fill="none" stroke="#7cc4ff" stroke-width="9" stroke-linecap="round" stroke-opacity=".55"/>
-            <g fill="#7cc4ff">
-              <rect x="244" y="108" width="14" height="44" rx="7"/>
-              <rect x="270" y="86" width="14" height="88" rx="7"/>
-              <rect x="296" y="100" width="14" height="60" rx="7"/>
-              <rect x="322" y="70" width="14" height="120" rx="7"/>
-              <rect x="348" y="96" width="14" height="68" rx="7"/>
-              <rect x="374" y="84" width="14" height="92" rx="7"/>
-              <rect x="400" y="112" width="14" height="36" rx="7"/>
-            </g>
-          </svg>
-        </figure>
-      </article>
-
-      <div class="project-grid">
-        <article class="project" aria-labelledby="p-maint">
-          <figure>
-            <svg class="fig" viewBox="0 0 320 180" role="img" aria-labelledby="p-maint-fig">
-              <title id="p-maint-fig">Illustration of an ROC curve bending toward the top left, above the chance diagonal.</title>
-              <rect class="fig-bg" width="320" height="180"/>
-              <path class="grid" d="M40 56H296M40 88H296M40 120H296M104 24V152M168 24V152M232 24V152"/>
-              <path class="area" d="M40 152C44 62 86 32 296 28V152Z"/>
-              <path class="line-2 dash" d="M40 152 296 28"/>
-              <path class="line" d="M40 152C44 62 86 32 296 28"/>
-              <path class="axis" d="M40 24V152H296"/>
-              <circle class="dot" cx="80" cy="64" r="5"/>
-            </svg>
-          </figure>
-          <div class="project-body">
-            <h3 id="p-maint">Predictive maintenance for aluminum manufacturing</h3>
-            <p>Flags bad decoating cycles in aluminum scrap processing from 18 sensor readings, so maintenance can be scheduled before a failure. Built for the CU Boulder DaSSA Hackathon.</p>
-            <p class="result">94.4% accuracy, 0.988 AUC-ROC, 94% recall on bad cycles</p>
-            <p class="stack">Python, scikit-learn, XGBoost, SMOTE, GridSearchCV</p>
-            <div class="project-links">
-              <a class="text-link" href="https://github.com/saketh-saridena/aluminum-predictive-maintenance">
-                <svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-github"/></svg>
-                <span>Code</span>
-              </a>
-              <button class="text-link" type="button" data-case="case-maint">
-                <svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-doc"/></svg>
-                <span>Case study</span>
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <article class="project" aria-labelledby="p-energy">
-          <figure>
-            <svg class="fig" viewBox="0 0 320 180" role="img" aria-labelledby="p-energy-fig">
-              <title id="p-energy-fig">Illustration of two energy time series with dashed forecasts and a widening uncertainty band.</title>
-              <rect class="fig-bg" width="320" height="180"/>
-              <path class="grid" d="M40 56H296M40 88H296M40 120H296"/>
-              <path class="grid" d="M196 24V152" stroke-dasharray="3 5"/>
-              <path class="area" d="M196 88 296 34V66Z"/>
-              <path class="line-2" d="M40 122C60 123 76 118 92 120S120 114 136 115 166 110 196 107"/>
-              <path class="line-2 dash" d="M196 107 296 98"/>
-              <path class="line" d="M40 142C62 140 74 134 90 135S118 124 132 120 160 106 176 101 190 92 196 88"/>
-              <path class="line dash" d="M196 88 296 50"/>
-              <path class="axis" d="M40 24V152H296"/>
-              <circle class="dot" cx="196" cy="88" r="4.5"/>
-              <circle class="dot-2" cx="196" cy="107" r="4.5"/>
-            </svg>
-          </figure>
-          <div class="project-body">
-            <h3 id="p-energy">US renewable energy forecasting</h3>
-            <p>Explores 57 years of US renewable generation (1965 to 2021) with clustering, association rules and classification, plus a support vector regression forecasting exercise.</p>
-            <p class="result">Wind passed hydro in 2019, and solar grew 55x from 2010 to 2021</p>
-            <p class="stack">Python, R, scikit-learn, arules, EIA API</p>
-            <div class="project-links">
-              <a class="text-link" href="https://github.com/saketh-saridena/us-renewable-energy-forecasting">
-                <svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-github"/></svg>
-                <span>Code</span>
-              </a>
-              <button class="text-link" type="button" data-case="case-energy">
-                <svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-doc"/></svg>
-                <span>Case study</span>
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <article class="project" aria-labelledby="p-cancer">
-          <figure>
-            <svg class="fig" viewBox="0 0 320 180" role="img" aria-labelledby="p-cancer-fig">
-              <title id="p-cancer-fig">Illustration of two Kaplan-Meier survival curves stepping down over time, with censoring marks.</title>
-              <rect class="fig-bg" width="320" height="180"/>
-              <path class="grid" d="M40 56H296M40 88H296M40 120H296"/>
-              <path class="line-2" d="M40 36H62V58H96V80H128V100H170V118H218V130H296"/>
-              <path class="line" d="M40 36H78V46H112V58H150V66H196V78H238V86H296"/>
-              <path class="line" d="M96 41v10M176 61v10M266 81v10"/>
-              <path class="axis" d="M40 24V152H296"/>
-            </svg>
-          </figure>
-          <div class="project-body">
-            <h3 id="p-cancer">Cancer patient survival analysis</h3>
-            <p>Kaplan-Meier survival curves and four regression models on 988 TCGA patient records, looking at how demographic, tumor and treatment factors relate to survival. A CU Boulder team project.</p>
-            <p class="stack">Python, lifelines, scikit-learn, XGBoost</p>
-            <div class="project-links">
-              <a class="text-link" href="https://github.com/saketh-saridena/cancer-survival-analysis">
-                <svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-github"/></svg>
-                <span>Code</span>
-              </a>
-              <a class="text-link" href="https://sakethsaridena.com/cancer-survival-analysis/">
-                <svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-chart"/></svg>
-                <span>Notebook</span>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project" aria-labelledby="p-misinfo">
-          <figure>
-            <svg class="fig" viewBox="0 0 320 180" role="img" aria-labelledby="p-misinfo-fig">
-              <title id="p-misinfo-fig">Illustration of news articles grouped into three clusters, each with a ring at its center.</title>
-              <rect class="fig-bg" width="320" height="180"/>
-              <path class="grid" d="M40 56H296M40 88H296M40 120H296"/>
-              <g class="dot">
-                <circle cx="86" cy="62" r="4"/><circle cx="98" cy="50" r="4"/><circle cx="114" cy="64" r="4"/><circle cx="92" cy="80" r="4"/>
-                <circle cx="118" cy="84" r="4"/><circle cx="80" cy="74" r="4"/><circle cx="126" cy="58" r="4"/><circle cx="106" cy="92" r="4"/>
-              </g>
-              <g class="dot-2">
-                <circle cx="198" cy="50" r="4"/><circle cx="216" cy="42" r="4"/><circle cx="230" cy="58" r="4"/><circle cx="206" cy="68" r="4"/>
-                <circle cx="224" cy="74" r="4"/><circle cx="240" cy="46" r="4"/><circle cx="190" cy="62" r="4"/>
-              </g>
-              <g class="bar-3">
-                <circle cx="156" cy="122" r="4"/><circle cx="172" cy="114" r="4"/><circle cx="188" cy="126" r="4"/><circle cx="164" cy="138" r="4"/>
-                <circle cx="180" cy="142" r="4"/><circle cx="198" cy="134" r="4"/><circle cx="148" cy="134" r="4"/>
-              </g>
-              <circle class="line" cx="104" cy="70" r="10"/>
-              <circle class="line" cx="214" cy="58" r="10"/>
-              <circle class="line" cx="173" cy="129" r="10"/>
-              <path class="axis" d="M40 24V152H296"/>
-            </svg>
-          </figure>
-          <div class="project-body">
-            <h3 id="p-misinfo">Social media misinformation, an NLP study</h3>
-            <p>A text-mining study of 1,054 news articles on whether social media companies should be held responsible for misinformation, with BERT stance labels, LDA topics, clustering and classifiers.</p>
-            <p class="result">68.7% accuracy classifying article stance with an RBF SVM</p>
-            <p class="stack">Python, scikit-learn, NLTK, Hugging Face Transformers, R</p>
-            <div class="project-links">
-              <a class="text-link" href="https://github.com/saketh-saridena/misinformation-nlp-analysis">
-                <svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-github"/></svg>
-                <span>Code</span>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project" aria-labelledby="p-amazon">
-          <figure>
-            <svg class="fig" viewBox="0 0 320 180" role="img" aria-labelledby="p-amazon-fig">
-              <title id="p-amazon-fig">Illustration of a diverging bar chart of positive and negative review sentiment.</title>
-              <rect class="fig-bg" width="320" height="180"/>
-              <rect class="bar" x="160" y="30" width="110" height="16" rx="8"/>
-              <rect class="bar-2" x="130" y="30" width="30" height="16" rx="8"/>
-              <rect class="bar" x="160" y="58" width="80" height="16" rx="8"/>
-              <rect class="bar-2" x="104" y="58" width="56" height="16" rx="8"/>
-              <rect class="bar" x="160" y="86" width="124" height="16" rx="8"/>
-              <rect class="bar-2" x="142" y="86" width="18" height="16" rx="8"/>
-              <rect class="bar" x="160" y="114" width="56" height="16" rx="8"/>
-              <rect class="bar-2" x="86" y="114" width="74" height="16" rx="8"/>
-              <rect class="bar" x="160" y="142" width="96" height="16" rx="8"/>
-              <rect class="bar-2" x="120" y="142" width="40" height="16" rx="8"/>
-              <path class="axis" d="M160 22V166"/>
-            </svg>
-          </figure>
-          <div class="project-body">
-            <h3 id="p-amazon">EZ Review, Amazon review sentiment analyzer</h3>
-            <p>Paste an Amazon product link and get a sentiment breakdown of its reviews plus a short GPT-written summary. Compares TextBlob, BERT and a hybrid where VADER handles clear-cut reviews and BERT the rest.</p>
-            <p class="stack">Python, Flask, React, Hugging Face Transformers, VADER, OpenAI API</p>
-            <div class="project-links">
-              <a class="text-link" href="https://github.com/saketh-saridena/amazon-review-sentiment">
-                <svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-github"/></svg>
-                <span>Code</span>
-              </a>
-              <button class="text-link" type="button" data-case="case-amazon">
-                <svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-doc"/></svg>
-                <span>Case study</span>
-              </button>
-            </div>
-          </div>
-        </article>
-
-        <article class="project more" aria-labelledby="p-more">
-          <h3 id="p-more">More projects</h3>
-          <ul>
-            <li>
-              <h4>WTI oil price forecasting</h4>
-              <p>Six models, from a naive baseline to LSTM and LightGBM, benchmarked on five years of daily crude oil prices, with a 3-month forecast.</p>
-              <button class="text-link" type="button" data-case="case-wti">
-                <svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-doc"/></svg>
-                <span>Case study</span>
-              </button>
-            </li>
-            <li>
-              <h4>Recipe recommendation system</h4>
-              <p>A three-tier recommender over 20,000+ recipes with 680 features, with nutrition and dietary filters.</p>
-              <button class="text-link" type="button" data-case="case-recipe">
-                <svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-doc"/></svg>
-                <span>Case study</span>
-              </button>
-            </li>
-          </ul>
-        </article>
       </div>
     </section>
 
@@ -437,16 +197,16 @@
       <div class="section-head">
         <h2 id="experience-title">Experience</h2>
       </div>
-      <ol class="timeline" reversed>
+      <ol class="timeline">
         <li class="job">
           <p class="job-when"><time datetime="2025-11">Nov 2025</time> – Present</p>
           <div>
             <h3>Data Science Consultant</h3>
             <p class="job-org"><strong>Applexus Technologies</strong>, Federal Way, WA</p>
             <ul>
-              <li>Engineered an AI-powered EDA platform using Python, Node.js and Electron, integrating 50+ statistical tests and local LLM interpretation, reducing client EDA cycle time by 95%.</li>
-              <li>Assessed AI and ML feasibility for 10+ enterprise use cases, performing feature engineering and ML readiness evaluation, reducing project scoping time by 80%.</li>
-              <li>Developed spend analytics and demand forecasting frameworks using Azure Databricks and SAP Analytics Cloud for enterprise procurement optimization.</li>
+              <li>Engineered an AI-powered EDA platform in Python, Node.js and Electron that runs 50+ statistical tests and adds local LLM interpretation, reducing client EDA cycle time by 95%.</li>
+              <li>Assessed AI and ML feasibility for 10+ enterprise use cases, with feature engineering and ML readiness evaluation, reducing project scoping time by 80%.</li>
+              <li>Developed spend analytics and demand forecasting frameworks on Azure Databricks and SAP Analytics Cloud for enterprise procurement.</li>
             </ul>
             <p class="stack">Python, Azure Databricks, SAP, MLOps, application development, GenAI integration, chatbot development</p>
           </div>
@@ -456,24 +216,20 @@
           <div>
             <h3>Data Analysis Intern</h3>
             <p class="job-org"><strong>Eco Servants Project</strong>, Remote, USA</p>
-            <ul>
-              <li>Developed a Sponsorship Data Analysis Framework that increased partner identification by 40% and improved donor targeting accuracy by 35%.</li>
-              <li>Built a Blog Topic and Audience Research Report using SEO and Google Analytics, improving audience reach by 50%.</li>
-            </ul>
-            <p class="stack">Data analysis, SEO, Google Analytics, Google Ads</p>
+            <p class="job-note">Built a sponsorship data analysis framework that increased partner identification by 40% and improved donor targeting accuracy by 35%.</p>
           </div>
         </li>
         <li class="job">
           <p class="job-when"><time datetime="2025-01">Jan 2025</time> – <time datetime="2025-05">May 2025</time></p>
           <div>
             <h3>Data Scientist (Capstone)</h3>
-            <p class="job-org"><strong>Honda Research Institute USA</strong>, Remote</p>
+            <p class="job-org"><strong>Honda Research Institute USA</strong>, Remote, through CU Boulder</p>
             <ul>
-              <li>Built an AI-powered data preprocessing pipeline using GPT-4 and MLOps practices, reducing manual effort by 60%.</li>
-              <li>Evaluated LLMs (GPT-4, Mistral 7B, Falcon 7B, LLaMA 3) and improved processing accuracy by 30%.</li>
-              <li>Designed an interactive visualization system with Groq's Mixtral-8x7b, achieving a 50% improvement in dashboard efficiency.</li>
+              <li>Built an AI-powered data preprocessing pipeline with GPT-4 and MLOps practices, reducing manual effort by 60%.</li>
+              <li>Evaluated GPT-4, Mistral 7B, Falcon 7B and LLaMA 3 for structured response generation, improving processing accuracy by 30%.</li>
+              <li>Designed an interactive visualization system with Groq's Mixtral-8x7b, with a 50% improvement in dashboard efficiency.</li>
             </ul>
-            <p class="stack">GPT-4, LLaMA, Mistral, Groq, MLOps</p>
+            <p class="stack">GPT-4, LLaMA, Mistral, Falcon, Groq, MLOps</p>
           </div>
         </li>
         <li class="job">
@@ -481,11 +237,7 @@
           <div>
             <h3>Data Scientist</h3>
             <p class="job-org"><strong>Pucho Digital Health Inc.</strong>, Remote, India</p>
-            <ul>
-              <li>Redesigned a ResNet50 architecture, achieving a 4% increase in diagnostic precision and a 15% boost in COVID-19 detection.</li>
-              <li>Implemented NLP-based noise reduction using spectral subtraction with MFCC, reaching an 85% production success rate.</li>
-            </ul>
-            <p class="stack">ResNet50, deep learning, NLP, computer vision</p>
+            <p class="job-note">Redesigned a ResNet50 architecture and launched it to production, with a 4% increase in diagnostic precision and a 15% boost in COVID-19 detection.</p>
           </div>
         </li>
         <li class="job">
@@ -493,105 +245,235 @@
           <div>
             <h3>Data Science Research Intern</h3>
             <p class="job-org"><strong>AI &amp; Robotics Center, VIT-AP University</strong>, India</p>
-            <ul>
-              <li>Authored a patent (Ref. 202341042839) for an intelligent traffic control system using deep learning and reinforcement learning.</li>
-              <li>Built UAV-based aquaculture monitoring using YOLOv5 at 84% accuracy, and presented research at PVSEC-31 with 99.3% prediction accuracy.</li>
-            </ul>
-            <p class="stack">YOLOv5, reinforcement learning, UAV, patent</p>
+            <p class="job-note">Research that led to a patent application, an IEEE paper and a PVSEC-31 talk. <a href="#research">See research</a>.</p>
           </div>
         </li>
       </ol>
     </section>
 
+    <!-- Selected work -->
+    <section class="section wrap" id="work" aria-labelledby="work-title">
+      <div class="section-head">
+        <h2 id="work-title">Selected work</h2>
+        <p>An open-source tool for coding agents, and two data science projects with their results. Each links to a full case study or the code.</p>
+      </div>
+
+      <div class="work">
+        <article class="banner on-navy feature" aria-labelledby="va-title">
+          <div>
+            <p class="kicker">Open source, MIT license, 2026</p>
+            <h3 id="va-title">voice-alerts</h3>
+            <p class="feature-lede">Spoken notifications for coding agents. When an agent needs permission, asks a question, has a plan ready or finishes a long job, voice-alerts says which session it is and what it needs, then stays quiet.</p>
+            <ul class="feature-points">
+              <li>Holds back during calls on Windows, then nudges you afterwards.</li>
+              <li>Sessions take turns, so voices never talk over each other.</li>
+              <li>Speaks once per event, even when several hooks fire.</li>
+            </ul>
+            <p class="agents-line">Works with Claude Code, Codex CLI, Gemini CLI, GitHub Copilot CLI, Cursor, OpenCode and Aider.</p>
+            <a class="btn btn-primary" href="https://github.com/saketh-saridena/voice-alerts">
+              <svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-github"/></svg>
+              View voice-alerts on GitHub
+            </a>
+          </div>
+          <div>
+            <p class="kicker" id="va-hear">What you hear</p>
+            <ul class="voice-panel" aria-labelledby="va-hear">
+              <li>
+                <span class="event-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg></span>
+                <div><p class="event">Permission request</p><q>Hey! The login fix session needs your okay to run the test suite. Got a sec?</q></div>
+              </li>
+              <li>
+                <span class="event-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-question"/></svg></span>
+                <div><p class="event">Question</p><q>Quick question from the docs refresh session. Which deploy target should I use?</q></div>
+              </li>
+              <li>
+                <span class="event-icon"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg></span>
+                <div><p class="event">Long job finished</p><q>Good news, the data pipeline session is finished. Want to have a look?</q></div>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="study" aria-labelledby="w-maint">
+          <div>
+            <p class="kicker">CU Boulder DaSSA Hackathon, 2023</p>
+            <h3 id="w-maint">Predictive maintenance for aluminum recycling</h3>
+            <p class="summary">A Random Forest flags bad decoating cycles in aluminum scrap recycling from furnace sensor readings, so maintenance can step in before costly dross builds up. Tuned for recall, because a missed bad cycle costs far more than a false alarm.</p>
+            <p class="result">Caught 469 of 498 bad cycles on held-out data (94% recall) at 75% precision, with 0.988 AUC.</p>
+            <p class="stack">Python, scikit-learn, XGBoost, SMOTE, GridSearchCV</p>
+            <div class="links">
+              <a class="text-link" href="/work/aluminum-predictive-maintenance/"><svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-doc"/></svg><span>Case study</span><span class="visually-hidden">: predictive maintenance for aluminum recycling</span></a>
+              <a class="text-link" href="https://github.com/saketh-saridena/aluminum-predictive-maintenance"><svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-github"/></svg><span>Code</span><span class="visually-hidden"> for predictive maintenance for aluminum recycling</span></a>
+            </div>
+          </div>
+          <figure class="square">
+            <img src="/assets/charts/aluminum-confusion-matrix.svg" width="415" height="379" loading="lazy" alt="Confusion matrix on 3,239 held-out cycles: 2,588 good predicted good, 153 false alarms, 29 bad cycles missed and 469 caught.">
+          </figure>
+        </article>
+
+        <article class="study" aria-labelledby="w-misinfo">
+          <div>
+            <p class="kicker">Text-mining project, 2025</p>
+            <h3 id="w-misinfo">Social media misinformation, an NLP study</h3>
+            <p class="summary">1,054 news articles on whether platforms should be held responsible for misinformation, with stance labels from a BERT model, LDA topics, clustering and classifiers that predict an article's stance.</p>
+            <p class="result">SVM reached 68.7% on three-way sentiment and 62.6% on four stances, against a 50% majority-class baseline.</p>
+            <p class="note">The labels come from a model, not human annotators, so accuracy measures agreement with those labels.</p>
+            <p class="stack">Python, scikit-learn, NLTK, Hugging Face Transformers, R</p>
+            <div class="links">
+              <a class="text-link" href="/work/misinformation-nlp-analysis/"><svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-doc"/></svg><span>Case study</span><span class="visually-hidden">: social media misinformation NLP study</span></a>
+              <a class="text-link" href="https://github.com/saketh-saridena/misinformation-nlp-analysis"><svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-github"/></svg><span>Code</span><span class="visually-hidden"> for social media misinformation NLP study</span></a>
+            </div>
+          </div>
+          <figure>
+            <img src="/assets/charts/misinfo-model-accuracy.svg" width="778" height="316" loading="lazy" alt="Accuracy on held-out articles: SVM RBF on sentiment 68.72%, SVM RBF on four stances 62.56%, linear SVM 59.24%, Naive Bayes 56.40%, best decision tree 51.66%.">
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <!-- More projects -->
+    <section class="section wrap" id="projects" aria-labelledby="projects-title">
+      <div class="section-head">
+        <h2 id="projects-title">More projects</h2>
+      </div>
+      <ul class="archive">
+        <li>
+          <p class="year">2024</p>
+          <div>
+            <h3>EZ Review, an Amazon review sentiment analyzer</h3>
+            <p>A Flask and React app that scrapes a product's reviews, scores them with VADER and DistilBERT, and writes a GPT-3.5 summary. I led a team of three.</p>
+            <p class="stack">Python, Flask, React, Hugging Face Transformers, OpenAI API</p>
+          </div>
+          <div class="links">
+            <a class="text-link" href="/work/amazon-review-sentiment/"><svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-doc"/></svg><span>Case study</span><span class="visually-hidden">: EZ Review</span></a>
+            <a class="text-link" href="https://github.com/saketh-saridena/amazon-review-sentiment"><svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-github"/></svg><span>Code</span><span class="visually-hidden"> for EZ Review</span></a>
+          </div>
+        </li>
+        <li>
+          <p class="year">2024</p>
+          <div>
+            <h3>US renewable energy, 1965 to 2021</h3>
+            <p>57 years of generation data from 17 merged datasets: wind passed hydro in 2019, and solar grew 55x from 2010 to 2021.</p>
+            <p class="stack">Python, R, scikit-learn, arules, EIA API</p>
+          </div>
+          <div class="links">
+            <a class="text-link" href="/work/us-renewable-energy/"><svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-doc"/></svg><span>Case study</span><span class="visually-hidden">: US renewable energy</span></a>
+            <a class="text-link" href="https://github.com/saketh-saridena/us-renewable-energy-forecasting"><svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-github"/></svg><span>Code</span><span class="visually-hidden"> for US renewable energy</span></a>
+          </div>
+        </li>
+        <li>
+          <p class="year">2023</p>
+          <div>
+            <h3>Cancer patient survival analysis</h3>
+            <p>Kaplan-Meier curves by tumor stage for 988 patients, and four regressors that showed clinical fields alone can't predict survival time. A team project of six.</p>
+            <p class="stack">Python, lifelines, scikit-learn, XGBoost</p>
+          </div>
+          <div class="links">
+            <a class="text-link" href="/work/cancer-survival-analysis/"><svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-doc"/></svg><span>Case study</span><span class="visually-hidden">: cancer patient survival analysis</span></a>
+            <a class="text-link" href="https://github.com/saketh-saridena/cancer-survival-analysis"><svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-github"/></svg><span>Code</span><span class="visually-hidden"> for cancer patient survival analysis</span></a>
+          </div>
+        </li>
+        <li>
+          <p class="year"></p>
+          <div>
+            <h3>WTI oil price forecasting</h3>
+            <p>Six models on five years of daily crude prices, where a naive baseline beat LSTM and LightGBM.</p>
+            <p class="stack">Python, TensorFlow, LightGBM, scikit-learn</p>
+          </div>
+          <div class="links">
+            <a class="text-link" href="/work/wti-oil-price-forecasting/"><svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-doc"/></svg><span>Case study</span><span class="visually-hidden">: WTI oil price forecasting</span></a>
+          </div>
+        </li>
+        <li>
+          <p class="year"></p>
+          <div>
+            <h3>Recipe recommendation system</h3>
+            <p>A three-tier recommender over 20,000+ recipes with 680 features, with nutrition and dietary filters.</p>
+            <p class="stack">Python, scikit-learn, pandas</p>
+          </div>
+          <div class="links">
+            <a class="text-link" href="/work/recipe-recommendation-system/"><svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-doc"/></svg><span>Case study</span><span class="visually-hidden">: recipe recommendation system</span></a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
     <!-- Research -->
     <section class="section wrap" id="research" aria-labelledby="research-title">
       <div class="section-head">
-        <h2 id="research-title">Research and patents</h2>
+        <h2 id="research-title">Research</h2>
       </div>
       <ul class="papers">
         <li class="paper">
-          <p class="paper-type"><svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-award"/></svg>Patent</p>
+          <p class="paper-type"><svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-award"/></svg>Patent application</p>
           <h3>Intelligent Traffic Control System</h3>
-          <p>A deep learning and reinforcement learning system that optimizes traffic flow and gives emergency vehicles priority.</p>
+          <p>Deep learning and reinforcement learning that optimize traffic flow and give emergency vehicles priority.</p>
           <p class="venue">Indian Patent Office, Ref. 202341042839</p>
-          <div class="project-links">
-            <button class="text-link" type="button" data-case="case-patent">
-              <svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-doc"/></svg>
-              <span>Details</span>
-            </button>
+          <div class="links">
+            <a class="text-link" href="/research/traffic-signal-patent/"><svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-doc"/></svg><span>Details</span><span class="visually-hidden">: Intelligent Traffic Control System patent application</span></a>
           </div>
         </li>
         <li class="paper">
           <p class="paper-type"><svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-doc"/></svg>IEEE paper</p>
           <h3>Automated Monitoring System for Healthier Aquaculture Farming</h3>
-          <p>A UAV-based monitoring system that uses YOLOv5 to find dead and diseased fish in aquaculture ponds, at 84% accuracy.</p>
+          <p>A drone-mounted YOLOv5 system that finds dead and diseased fish in aquaculture ponds, at 84% accuracy.</p>
           <p class="venue">ACCAI-2023</p>
-          <div class="project-links">
-            <a class="text-link" href="https://ieeexplore.ieee.org/document/10200444">
-              <svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-external"/></svg>
-              <span>IEEE Xplore</span>
-            </a>
-            <button class="text-link" type="button" data-case="case-ieee">
-              <svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-doc"/></svg>
-              <span>Details</span>
-            </button>
+          <div class="links">
+            <a class="text-link" href="https://ieeexplore.ieee.org/document/10200444"><svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-external"/></svg><span>IEEE Xplore</span><span class="visually-hidden">: Automated Monitoring System for Healthier Aquaculture Farming</span></a>
+            <a class="text-link" href="/research/aquaculture-monitoring/"><svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-doc"/></svg><span>Details</span><span class="visually-hidden">: aquaculture monitoring paper</span></a>
           </div>
         </li>
         <li class="paper">
           <p class="paper-type"><svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-mic"/></svg>Conference talk</p>
           <h3>AI Algorithms for Perovskite Solar Cells Fabrication</h3>
-          <p>Machine learning for discovering, screening and optimizing perovskite materials, with 99.3% prediction accuracy.</p>
+          <p>Machine learning for discovering, screening and optimizing perovskite materials for solar cells.</p>
           <p class="venue">PVSEC-31</p>
-          <div class="project-links">
-            <button class="text-link" type="button" data-case="case-pvsec">
-              <svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-doc"/></svg>
-              <span>Details</span>
-            </button>
+          <div class="links">
+            <a class="text-link" href="/research/perovskite-solar-ai/"><svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-doc"/></svg><span>Details</span><span class="visually-hidden">: perovskite solar cells talk</span></a>
           </div>
         </li>
       </ul>
     </section>
 
-    <!-- Skills -->
-    <section class="section wrap" id="skills" aria-labelledby="skills-title">
+    <!-- About -->
+    <section class="section wrap" id="about" aria-labelledby="about-title">
       <div class="section-head">
-        <h2 id="skills-title">Skills</h2>
+        <h2 id="about-title">About</h2>
       </div>
-      <dl class="skills">
-        <div><dt>LLMs and generative AI</dt><dd>GPT-4, LLaMA, Mistral, Falcon, Ollama, Groq, LangChain, RAG, fine-tuning, prompt engineering</dd></div>
-        <div><dt>ML and deep learning</dt><dd>PyTorch, TensorFlow, scikit-learn, Keras, Hugging Face, XGBoost, OpenCV, BERT, YOLOv5</dd></div>
-        <div><dt>Specializations</dt><dd>NLP, computer vision, time series, recommendation systems, predictive modeling, statistical analysis</dd></div>
-        <div><dt>Data and cloud</dt><dd>AWS (S3, EC2, SageMaker), Azure Databricks, Snowflake, Hadoop, Docker, Kubernetes, MLOps, ETL, CI/CD</dd></div>
-        <div><dt>BI and analytics</dt><dd>SAP Analytics Cloud, Tableau, Power BI, Streamlit, Google Analytics, A/B testing, advanced Excel</dd></div>
-        <div><dt>Languages</dt><dd>Python, SQL, R, JavaScript, Java, MATLAB, Bash, Git</dd></div>
-      </dl>
-    </section>
-
-    <!-- Education -->
-    <section class="section wrap" id="education" aria-labelledby="education-title">
-      <div class="section-head">
-        <h2 id="education-title">Education</h2>
+      <div class="background">
+        <div>
+          <p class="bio">I studied computer science with a focus on data analytics at Vellore Institute of Technology, where research at the AI &amp; Robotics Center led to a patent application, an IEEE paper and a PVSEC-31 talk. After a data science role at Pucho Digital Health, I earned an M.S. in Data Science at CU Boulder, finishing with an LLM evaluation capstone for Honda Research Institute. Today I'm a Data Science Consultant at Applexus Technologies, based in Seattle.</p>
+          <h3 class="schools-title">Education</h3>
+          <ul class="schools">
+            <li class="school">
+              <h4>University of Colorado Boulder</h4>
+              <p>M.S. Data Science</p>
+              <p>GPA 4.0 / 4.0, Aug 2023 – May 2025</p>
+            </li>
+            <li class="school">
+              <h4>Vellore Institute of Technology</h4>
+              <p>B.Tech Computer Science (Data Analytics)</p>
+              <p>GPA 9.07 / 10, Jul 2019 – May 2023</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Skills</h3>
+          <dl class="skills">
+            <div><dt>LLMs and generative AI</dt><dd>GPT-4, LLaMA, Mistral, Falcon, Groq, LangChain, RAG, fine-tuning, prompt engineering</dd></div>
+            <div><dt>Machine learning</dt><dd>PyTorch, TensorFlow, scikit-learn, XGBoost, Hugging Face, OpenCV; NLP, computer vision, time series</dd></div>
+            <div><dt>Data and cloud</dt><dd>Python, SQL, R, Azure Databricks, AWS (S3, EC2, SageMaker), Snowflake, Docker, SAP Analytics Cloud</dd></div>
+            <div><dt>Also worked with</dt><dd>JavaScript, Java, MATLAB, Bash, Git, Keras, BERT, YOLOv5, Ollama, Hadoop, Kubernetes, ETL, CI/CD, Tableau, Power BI, Streamlit, Google Analytics, A/B testing, Excel</dd></div>
+          </dl>
+        </div>
       </div>
-      <ul class="schools">
-        <li class="school">
-          <h3>University of Colorado Boulder</h3>
-          <p class="degree">M.S. Data Science</p>
-          <p class="meta"><span>GPA 4.0 / 4.0</span><span>Aug 2023 – May 2025</span></p>
-          <p class="coursework">Coursework: machine learning, neural networks, deep learning, big data architecture, statistical methods, data mining</p>
-        </li>
-        <li class="school">
-          <h3>Vellore Institute of Technology</h3>
-          <p class="degree">B.Tech Computer Science (Data Analytics)</p>
-          <p class="meta"><span>GPA 9.07 / 10</span><span>Jul 2019 – May 2023</span></p>
-        </li>
-      </ul>
     </section>
 
     <!-- Contact -->
     <section class="section wrap contact" id="contact" aria-labelledby="contact-title">
       <div class="banner on-navy">
         <h2 id="contact-title">Get in touch</h2>
-        <p>Have a hard data problem, a collaboration idea, or want to talk about AI? I'd like to hear from you. Email is the fastest way to reach me.</p>
+        <p>Contact me about data science, AI engineering or collaboration. Email is the fastest way to reach me.</p>
         <ul class="contact-list">
           <li>
             <a href="mailto:sakethsaridena6@gmail.com">
@@ -626,327 +508,5 @@
       <p><a href="https://github.com/saketh-saridena/saketh-saridena.github.io">Source on GitHub</a></p>
     </div>
   </footer>
-
-  <!-- Case studies -->
-  <dialog class="case" id="case-maint" aria-labelledby="case-maint-title">
-    <div class="case-head">
-      <div>
-        <p class="case-kind">Case study</p>
-        <h2 id="case-maint-title">Predictive maintenance for aluminum manufacturing</h2>
-      </div>
-      <button class="case-close" type="button" aria-label="Close case study"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"/></svg></button>
-    </div>
-    <div class="case-body">
-      <p>A classifier that reads 18 sensor measurements to predict bad decoating cycles before they happen, with a business cost analysis. Built for the CU Boulder DaSSA Hackathon.</p>
-      <dl class="metrics">
-        <div><dt>Accuracy</dt><dd>94.4%</dd></div>
-        <div><dt>AUC-ROC</dt><dd>0.988</dd></div>
-        <div><dt>Recall on bad cycles</dt><dd>94%</dd></div>
-        <div><dt>Sensor features</dt><dd>18</dd></div>
-      </dl>
-      <h3>Problem</h3>
-      <p>Equipment failures cause unplanned downtime, and the hackathon's problem statement put each undetected bad cycle at $32,560 in losses. The goal was a classifier that predicts failures from sensor data with high recall, across 16,500+ production records.</p>
-      <h3>Approach</h3>
-      <ul>
-        <li>Analyzed 16,504 records with 18 sensor measurements recorded at 5-minute intervals.</li>
-        <li>Handled severe class imbalance (about 85% good, 15% bad cycles) with SMOTE oversampling.</li>
-        <li>Used correlation analysis to find the strongest predictors: B_15 (0.655), B_16 (0.631) and B_19 (0.613).</li>
-        <li>Tuned with GridSearchCV and 3-fold cross-validation across 243 hyperparameter combinations, optimizing for recall.</li>
-        <li>Trained Random Forest and XGBoost classifiers, then ran a business impact cost analysis.</li>
-      </ul>
-      <h3>Results</h3>
-      <ul>
-        <li>94.4% accuracy with 0.988 AUC-ROC.</li>
-        <li>94% recall on failures, so nearly every failing cycle is caught.</li>
-        <li>Confusion matrix: 2,588 true negatives, 469 true positives, and only 29 missed failures out of 498.</li>
-        <li>Lets the plant schedule preventive maintenance instead of absorbing the cost of missed failures.</li>
-      </ul>
-      <h3>Tech stack</h3>
-      <p class="stack">XGBoost, Random Forest, SMOTE, GridSearchCV, scikit-learn, pandas, seaborn, Matplotlib</p>
-      <div class="case-links">
-        <a class="btn btn-primary" href="https://github.com/saketh-saridena/aluminum-predictive-maintenance"><svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-github"/></svg>View code on GitHub</a>
-      </div>
-    </div>
-  </dialog>
-
-  <dialog class="case" id="case-energy" aria-labelledby="case-energy-title">
-    <div class="case-head">
-      <div>
-        <p class="case-kind">Case study</p>
-        <h2 id="case-energy-title">US renewable energy forecasting</h2>
-      </div>
-      <button class="case-close" type="button" aria-label="Close case study"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"/></svg></button>
-    </div>
-    <div class="case-body">
-      <p>A machine learning project that analyzes US renewable energy production across solar, wind, hydro and biofuel sources from 1965 to 2021, with a forecasting exercise out to 2034.</p>
-      <dl class="metrics">
-        <div><dt>Years of data, 1965–2021</dt><dd>57</dd></div>
-        <div><dt>Merged datasets</dt><dd>17</dd></div>
-        <div><dt>K-Means silhouette, k=2</dt><dd>0.881</dd></div>
-        <div><dt>Solar growth, 2010–2021</dt><dd>55x</dd></div>
-      </dl>
-      <h3>Problem</h3>
-      <p>Energy policy and infrastructure investment need long-term forecasts of renewable production. Understanding how solar, wind, hydro and biofuel production trend and move together matters for planning the transition to sustainable energy in the United States.</p>
-      <h3>Approach</h3>
-      <ul>
-        <li>Collected US renewable energy production data through the EIA REST API and public energy datasets.</li>
-        <li>Explored the data: correlation heatmaps showed solar and wind rising together, stable hydro generation, and independent biofuel trends.</li>
-        <li>Applied unsupervised learning: K-Means (k = 2, 3, 4, compared by silhouette score), hierarchical clustering with dendrograms, and association rule mining.</li>
-        <li>Built supervised models: decision trees and Naive Bayes to categorize production levels.</li>
-        <li>Trained support vector regressors on trend-extended features as a forecasting exercise out to 2034, and built Tableau dashboards for the trends.</li>
-      </ul>
-      <h3>Results</h3>
-      <ul>
-        <li>Wind generation passed hydro in 2019, at 298.9 TWh against 285.5 TWh.</li>
-        <li>Solar grew 55x from 2010 to 2021, from 3.0 to 165.4 TWh.</li>
-        <li>K-Means separates the years into two eras, with a silhouette score of 0.881 at k = 2.</li>
-        <li>Solar and wind showed sharp recent rises with a strong positive correlation, which suggests shared policy effects.</li>
-        <li>Hydro and geothermal stayed stable, which makes them useful for baseload planning.</li>
-        <li>An 8-notebook pipeline covers the full lifecycle, from data wrangling to forecasting.</li>
-      </ul>
-      <h3>Tech stack</h3>
-      <p class="stack">SVR, K-Means, decision trees, Naive Bayes, association rules, Tableau, EIA API, scikit-learn, Python, R</p>
-      <div class="case-links">
-        <a class="btn btn-primary" href="https://github.com/saketh-saridena/us-renewable-energy-forecasting"><svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-github"/></svg>View code on GitHub</a>
-      </div>
-    </div>
-  </dialog>
-
-  <dialog class="case" id="case-amazon" aria-labelledby="case-amazon-title">
-    <div class="case-head">
-      <div>
-        <p class="case-kind">Case study</p>
-        <h2 id="case-amazon-title">EZ Review, Amazon review sentiment analyzer</h2>
-      </div>
-      <button class="case-close" type="button" aria-label="Close case study"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"/></svg></button>
-    </div>
-    <div class="case-body">
-      <p>A full-stack web app that scrapes Amazon reviews, scores their sentiment with three model pipelines, and writes an AI summary for quick product evaluation.</p>
-      <dl class="metrics">
-        <div><dt>Sentiment pipelines</dt><dd>3</dd></div>
-        <div><dt>Review pages scraped</dt><dd>10</dd></div>
-        <div><dt>Sentence AI summary</dt><dd>4</dd></div>
-      </dl>
-      <h3>Problem</h3>
-      <p>Shoppers face information overload when evaluating products. Reading hundreds of reviews is slow and inconsistent, and there was no simple way to get a data-driven sentiment breakdown with a summary of what customers actually say.</p>
-      <h3>Approach</h3>
-      <ul>
-        <li>A React front end where you paste any Amazon product URL.</li>
-        <li>A Flask API extracts the product ASIN and scrapes up to 10 pages of reviews through Amazon's AJAX endpoint with BeautifulSoup.</li>
-        <li>Three sentiment pipelines: TextBlob (lexicon-based), DistilBERT fine-tuned on SST-2, and a hybrid where VADER decides clear-cut reviews and BERT decides the ambiguous ones.</li>
-        <li>OpenAI GPT-3.5-turbo-instruct writes a four-sentence summary of the common themes.</li>
-        <li>Results come back as JSON with sentiment percentages and the summary.</li>
-      </ul>
-      <h3>Results</h3>
-      <ul>
-        <li>The hybrid pipeline sends ambiguous language to BERT, where lexicon scores alone fall short.</li>
-        <li>Summaries pick out the themes customers mention most, such as quality, shipping and value.</li>
-        <li>One pipeline from product URL to insight.</li>
-      </ul>
-      <h3>Tech stack</h3>
-      <p class="stack">Python, React, Flask, BERT, VADER, TextBlob, GPT-3.5, Hugging Face, BeautifulSoup, NLTK</p>
-      <div class="case-links">
-        <a class="btn btn-primary" href="https://github.com/saketh-saridena/amazon-review-sentiment"><svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-github"/></svg>View code on GitHub</a>
-      </div>
-    </div>
-  </dialog>
-
-  <dialog class="case" id="case-wti" aria-labelledby="case-wti-title">
-    <div class="case-head">
-      <div>
-        <p class="case-kind">Case study</p>
-        <h2 id="case-wti-title">WTI oil price forecasting</h2>
-      </div>
-      <button class="case-close" type="button" aria-label="Close case study"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"/></svg></button>
-    </div>
-    <div class="case-body">
-      <p>Time series forecasting of crude oil prices with six models, including deep learning LSTMs, and a 3-month recursive forward prediction.</p>
-      <dl class="metrics">
-        <div><dt>Models compared</dt><dd>6</dd></div>
-        <div><dt>Best validation RMSE</dt><dd>1.287</dd></div>
-        <div><dt>Trading days</dt><dd>1,305</dd></div>
-        <div><dt>Forecast horizon</dt><dd>3 months</dd></div>
-      </dl>
-      <h3>Problem</h3>
-      <p>WTI crude oil prices are volatile and move with geopolitical events, supply and demand, and market sentiment. Accurate forecasts matter to energy companies, traders and policymakers. The goal was to benchmark several forecasting models on five years of daily prices and produce a 3-month forward forecast.</p>
-      <h3>Approach</h3>
-      <ul>
-        <li>Collected 1,305 daily WTI price records (Nov 2020 – Nov 2025), reindexed to business days with linear interpolation for holidays.</li>
-        <li>Engineered 17 features: price lags (1, 5, 21 and 63 days), rolling means and standard deviations (7, 21 and 63-day windows), returns and calendar features.</li>
-        <li>Used a time-based split, 981 days for training and 261 for validation, so no future data leaks into training.</li>
-        <li>Benchmarked six models: a naive baseline, linear regression, random forest, LightGBM, a basic LSTM (21-day sequences) and an improved LSTM (60-day sequences with dropout and early stopping).</li>
-        <li>Generated a 3-month recursive forward forecast with the best deep learning model.</li>
-      </ul>
-      <h3>Results</h3>
-      <ul>
-        <li>The naive model had the best validation RMSE (1.287), which is consistent with WTI prices behaving like a random walk with strong autocorrelation.</li>
-        <li>The improved LSTM (RMSE 1.693) clearly beat the basic LSTM (2.314) thanks to a deeper architecture, dropout and early stopping.</li>
-        <li>Tree-based models (random forest 1.629, LightGBM 1.598) overfit the training data and underperformed on validation.</li>
-        <li>Direction prediction stayed hard, with every model near 50% accuracy, which reflects how random daily moves are.</li>
-        <li>The LSTM was chosen for the 3-month forecast for its ability to model long-term patterns and momentum shifts.</li>
-      </ul>
-      <h3>Tech stack</h3>
-      <p class="stack">LSTM, LightGBM, random forest, TensorFlow, Keras, scikit-learn, pandas, NumPy, Matplotlib</p>
-    </div>
-  </dialog>
-
-  <dialog class="case" id="case-recipe" aria-labelledby="case-recipe-title">
-    <div class="case-head">
-      <div>
-        <p class="case-kind">Case study</p>
-        <h2 id="case-recipe-title">Recipe recommendation system</h2>
-      </div>
-      <button class="case-close" type="button" aria-label="Close case study"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"/></svg></button>
-    </div>
-    <div class="case-body">
-      <p>A three-tier recommendation engine built on 20,000+ recipes with 680 features, with personalized suggestions based on nutrition, dietary preferences and ingredient similarity.</p>
-      <dl class="metrics">
-        <div><dt>Recipes</dt><dd>20K+</dd></div>
-        <div><dt>Features</dt><dd>680</dd></div>
-        <div><dt>Recommendation tiers</dt><dd>3</dd></div>
-      </dl>
-      <h3>Problem</h3>
-      <p>Finding healthy recipes that match personal dietary preferences, nutrition goals and the ingredients on hand is overwhelming, and existing platforms lack multi-factor filtering. The goal was a recommender that weighs nutrition profiles, taste preferences and dietary restrictions at the same time.</p>
-      <h3>Approach</h3>
-      <ul>
-        <li>Curated and cleaned a dataset of 20,000+ recipes with 680 features, including nutrition, ingredients, ratings and preparation details.</li>
-        <li>Built three recommendation tiers: content-based filtering with cosine similarity on nutrition vectors, ingredient matching with personalized weighting, and hybrid scoring that combines both.</li>
-        <li>Applied dietary filters (vegetarian, vegan, gluten-free, keto and more) before scoring.</li>
-        <li>Used statistical testing to check that recommended recipes differ significantly from random picks on key nutrition metrics.</li>
-        <li>Engineered nutrition features: normalized macros, calorie density ratios and nutrient balance scores.</li>
-      </ul>
-      <h3>Results</h3>
-      <ul>
-        <li>Recommends recipes that match nutrition profiles with high cosine similarity scores.</li>
-        <li>The three tiers give varied suggestions, from nutrition-focused to ingredient-based to hybrid.</li>
-        <li>Dietary filtering keeps 100% compliance with user restrictions while keeping recommendation quality.</li>
-        <li>Statistical tests confirmed the recommendations are significantly more relevant than a random baseline (p &lt; 0.05).</li>
-      </ul>
-      <h3>Tech stack</h3>
-      <p class="stack">Cosine similarity, scikit-learn, pandas, NumPy, statistical testing, feature engineering, Python</p>
-    </div>
-  </dialog>
-
-  <dialog class="case" id="case-patent" aria-labelledby="case-patent-title">
-    <div class="case-head">
-      <div>
-        <p class="case-kind">Patent, Indian Patent Office</p>
-        <h2 id="case-patent-title">Adaptive traffic signal control using real-time vehicle classification and weather data</h2>
-      </div>
-      <button class="case-close" type="button" aria-label="Close details"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"/></svg></button>
-    </div>
-    <div class="case-body">
-      <p>An intelligent traffic control system that adjusts signal timing using deep learning vehicle classification, weather monitoring and a multi-factor priority index, and gives emergency vehicles priority.</p>
-      <dl class="metrics">
-        <div><dt>Application number</dt><dd>202341042839</dd></div>
-        <div><dt>Claims</dt><dd>10</dd></div>
-        <div><dt>Core tech</dt><dd>DL + CV</dd></div>
-        <div><dt>Edge hardware</dt><dd>Jetson</dd></div>
-      </dl>
-      <h3>Problem</h3>
-      <p>Conventional traffic signals use fixed timing that ignores real-time conditions, which causes congestion, wasted fuel and dangerous delays for emergency vehicles. Existing adaptive systems address single factors, such as weather or vehicle count, but none combined real-time video analytics, weather data, vehicle type classification and emergency priority in one system.</p>
-      <h3>Approach</h3>
-      <ul>
-        <li>IP cameras at intersections feed real-time video to an edge AI control unit (NVIDIA Jetson AGX Orin, 2048-core Ampere GPU, 275 TOPS).</li>
-        <li>A deep learning module classifies pedestrians, emergency vehicles, two-wheelers, auto-rickshaws, cars and buses in real time.</li>
-        <li>A weather monitoring server with temperature, humidity and wind sensors gives two-wheelers priority in bad weather, for rider safety.</li>
-        <li>A multi-factor priority index per lane weighs vehicle types, counts, lane density, occupied area, weather severity and estimated passengers (car 3, bus 25, two-wheeler 1).</li>
-        <li>Emergency vehicle preemption detects approaching emergency vehicles and switches the signal or shortens the wait based on distance.</li>
-        <li>Hardware: LED signal controllers with Arduino and STM32 microcontrollers, CSI camera interfaces, and I2C, SPI and UART sensor buses.</li>
-      </ul>
-      <h3>Outcome</h3>
-      <ul>
-        <li>Filed with the Indian Patent Office (Application No. 202341042839) with 10 claims.</li>
-        <li>Answered four prior-art citations (US20210409649A1, US20190333375A1, US20220108607A1, US20160381325A1), none of which, alone or together, teach the multi-factor priority system.</li>
-        <li>Overcame a Section 3(k) objection ("computer program per se") by showing a tightly integrated hardware and software system with specific physical components.</li>
-        <li>The first system to combine real-time vehicle classification, weather-adaptive priority, emergency preemption and passenger-count estimation in one control architecture.</li>
-      </ul>
-      <h3>Tech stack</h3>
-      <p class="stack">Deep learning, reinforcement learning, computer vision, NVIDIA Jetson, Arduino, STM32, edge AI, Python</p>
-    </div>
-  </dialog>
-
-  <dialog class="case" id="case-ieee" aria-labelledby="case-ieee-title">
-    <div class="case-head">
-      <div>
-        <p class="case-kind">IEEE paper, ACCAI-2023</p>
-        <h2 id="case-ieee-title">Automated Monitoring System for Healthier Aquaculture Farming</h2>
-      </div>
-      <button class="case-close" type="button" aria-label="Close details"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"/></svg></button>
-    </div>
-    <div class="case-body">
-      <p>A UAV-based deep learning system that uses YOLOv5 to detect dead and diseased fish in aquaculture ponds in real time, published at the IEEE ACCAI-2023 conference.</p>
-      <dl class="metrics">
-        <div><dt>Detection accuracy</dt><dd>84%</dd></div>
-        <div><dt>YOLOv5 variants</dt><dd>5</dd></div>
-        <div><dt>Platform</dt><dd>UAV</dd></div>
-        <div><dt>Venue</dt><dd>ACCAI-2023</dd></div>
-      </dl>
-      <h3>Problem</h3>
-      <p>Aquaculture is one of India's key economic sectors, but farms lack automated ways to detect dead or diseased fish. Spotting them by hand across large ponds is slow and error-prone, and a single outbreak can devastate a pond within days, so early detection matters.</p>
-      <h3>Approach</h3>
-      <ul>
-        <li>Built a custom fish detection dataset from photos taken in controlled conditions, with Google Images added for test diversity.</li>
-        <li>Trained and compared five YOLOv5 variants (nano, small, medium, large, extra-large) to balance speed and accuracy for aerial detection.</li>
-        <li>I implemented the YOLOv5m and YOLOv5l variants and led the literature review, idea formation and documentation.</li>
-        <li>Designed for drones: a camera flies over the ponds and images are processed in real time to pinpoint dead fish.</li>
-        <li>The system outputs bounding boxes with confidence scores so farm operators can find and remove diseased fish quickly.</li>
-        <li>All training ran on Google Colab with GPU acceleration.</li>
-      </ul>
-      <h3>Results</h3>
-      <ul>
-        <li>84% detection accuracy for dead and diseased fish in aerial drone imagery.</li>
-        <li>The YOLOv5 large and medium variants gave the best balance of accuracy and inference speed for real-time drone use.</li>
-        <li>Published at IEEE ACCAI-2023, the International Conference on Advances in Computing, Communication and Applied Informatics.</li>
-        <li>A low-cost, software-only solution that works on any commercial drone with a camera.</li>
-        <li>Completed as a capstone at VIT-AP University, with a proposal, three review phases and a final report.</li>
-      </ul>
-      <h3>Tech stack</h3>
-      <p class="stack">YOLOv5, computer vision, object detection, PyTorch, Python, Google Colab, UAV</p>
-      <div class="case-links">
-        <a class="btn btn-primary" href="https://ieeexplore.ieee.org/document/10200444"><svg class="icon icon-sm" aria-hidden="true" focusable="false"><use href="#i-external"/></svg>Read on IEEE Xplore</a>
-      </div>
-    </div>
-  </dialog>
-
-  <dialog class="case" id="case-pvsec" aria-labelledby="case-pvsec-title">
-    <div class="case-head">
-      <div>
-        <p class="case-kind">Conference talk, PVSEC-31</p>
-        <h2 id="case-pvsec-title">AI Algorithms for Perovskite Solar Cells Fabrication</h2>
-      </div>
-      <button class="case-close" type="button" aria-label="Close details"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"/></svg></button>
-    </div>
-    <div class="case-body">
-      <p>Research on applying machine learning and deep learning to discover, screen and optimize perovskite materials for next-generation solar cells, presented at PVSEC-31.</p>
-      <dl class="metrics">
-        <div><dt>Prediction accuracy</dt><dd>99.3%</dd></div>
-        <div><dt>Dimensionality, neural net</dt><dd>~90%</dd></div>
-        <div><dt>Materials screened</dt><dd>38K+</dd></div>
-        <div><dt>Viable candidates</dt><dd>686</dd></div>
-      </dl>
-      <h3>Problem</h3>
-      <p>Perovskite solar cells are among the most promising next-generation photovoltaic technologies, but finding stable, efficient compositions takes expensive, slow experimental synthesis, and density functional theory (DFT) calculations are computationally heavy. The field needed AI to screen thousands of candidates and predict their properties before synthesis.</p>
-      <h3>Approach</h3>
-      <ul>
-        <li>Compared 10+ ML and deep learning algorithms across property identification, stability optimization and lead-free perovskite research.</li>
-        <li>Studied perovskites with the ABX3 structure, with models trained on DFT data (crystal structures, band gaps, elastic constants, decomposition energies).</li>
-        <li>Evaluated gradient boosting, SVM, kernel ridge regression, KNN, neural networks, logistic regression, decision trees, random forests, CNNs and transfer learning for material screening.</li>
-        <li>Screened 38,086 hybrid organic-inorganic perovskites with a GBR, SVM and KRR ensemble.</li>
-        <li>Applied SVC to 455 materials with 11 attributes for formability, and KRR, KNN and SVR trained on 354 DFT decomposition energies validated by experiment.</li>
-        <li>Extended the work to AI for memristors, luminescent materials and microfluidic synthesis.</li>
-      </ul>
-      <h3>Results</h3>
-      <ul>
-        <li>99.3% prediction accuracy for solar cell fabrication parameter optimization.</li>
-        <li>About 90% accuracy with neural networks for crystal dimensionality classification, and about 86% with logistic regression for grain boundary identification.</li>
-        <li>Narrowed 38,086 hybrid perovskites down to 686 viable candidates for photovoltaics.</li>
-        <li>Identified 2,025 possible perovskites, 151 of them with band gaps suited to solar cells, using gradient boosting regression and classification.</li>
-        <li>Presented at PVSEC-31, the 31st International Photovoltaic Science and Engineering Conference.</li>
-      </ul>
-      <h3>Tech stack</h3>
-      <p class="stack">Gradient boosting, SVM, KRR, KNN, neural networks, CNN, transfer learning, DFT data, scikit-learn, PyTorch, Python</p>
-    </div>
-  </dialog>
 </body>
 </html>
